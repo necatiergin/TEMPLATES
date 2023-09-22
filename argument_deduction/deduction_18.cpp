@@ -5,6 +5,6 @@ int main()
 {
 	void* vptr{};
 
-	func(vptr);
-	func(&vptr);
+	func(vptr); // T is void call param is void *
+	func(&vptr); //T is void * call param is void **
 }
