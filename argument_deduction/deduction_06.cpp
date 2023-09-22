@@ -8,9 +8,9 @@ int main()
 	int c[3]{1, 2, 3};
 	int d[4]{1, 2, 3, 4};
 
-	//func(a, b); //gecersiz
+	//func(a, b); //invalid
 	func(a, c);
-	//func(a, d); //gecersiz
-	func("ahmet", "halil"); //gecerli
-	//func("ahmet", "mehmet"); //gecersiz
+	//func(a, d); //invalid
+	func("albert", "george"); //valid
+	//func("tom", "alvin"); //invalid
 }
