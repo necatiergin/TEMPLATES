@@ -1,4 +1,3 @@
-
 template<typename T>
 void f1(T*);
 
