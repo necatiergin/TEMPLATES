@@ -1,12 +1,10 @@
 template<typename T>
 class TypeTeller;
 
-
 template <typename T>
 void foo(const T* p)
 {
     TypeTeller<T> x;
-
 }
 
 int main()
