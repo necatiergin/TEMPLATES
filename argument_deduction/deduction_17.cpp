@@ -13,8 +13,8 @@ public:
 		Temp<int> x;
 		Temp<double> y;
 
-		std::cout << typeid(x).name() << "\n";
-		std::cout << typeid(y).name() << "\n";
+		std::cout << typeid(x).name() << '\n';
+		std::cout << typeid(y).name() << '\n';
 	}
 };
 
