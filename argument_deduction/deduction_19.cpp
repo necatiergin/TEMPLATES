@@ -1,12 +1,14 @@
 template <typename T>
 void func(T = 0);
 
+class Myclass {};
 int main()
 {
-	int x{20};
+	int x{ 20 };
 
 	func(20);  //T is int
 	func(2.0); //T is double
 	func(&x); //T is int*
 	//func();  // invalid
+	func(Myclass{}); //valid
 }
