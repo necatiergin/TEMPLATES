@@ -9,5 +9,6 @@ int main()
 
 	vector<int> ivec(10);
 
-	func(ivec[0], ivec);
+	func(ivec[0], ivec); //invalid - conflicting types
+	//T    int&    int    
 }
