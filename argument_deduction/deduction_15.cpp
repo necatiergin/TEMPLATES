@@ -6,6 +6,6 @@ int foo(double);
 int main()
 {
 	func(foo);
-	//func([](int x) {return x; }); //gecersiz
-	func(+[](int x) {return x; }); //gecerli  - positive lambda idiom
+	//func([](int x) {return x; }); //invalid
+	func(+[](int x) {return x; }); //valid  - positive lambda idiom
 }
