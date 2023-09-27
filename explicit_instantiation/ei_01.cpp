@@ -13,9 +13,6 @@ namespace ns
 // client.cpp
 // #include "nec.h"
 
-template class ns::Nec<char>; // [2]
+template class ns::Nec<char>; 
 
-int main()
-{
-
-}
+//...
