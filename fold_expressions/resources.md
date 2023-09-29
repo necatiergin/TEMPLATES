@@ -4,6 +4,7 @@
 
 (https://godbolt.org/z/8fMde5d81)
 
+(https://mainfunda.com/fold-expressions-in-cpp17/)
 
 
 
