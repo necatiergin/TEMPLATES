@@ -1,7 +1,6 @@
 #include <initializer_list>
 #include <iostream>
 
-
 template <typename ...Args>
 void Print(const Args &...args)
 {
