@@ -1,4 +1,5 @@
 #include <iostream>
+#include <type_traits>
 
 struct X {
 	X(int i)
@@ -33,4 +34,9 @@ public:
 int main()
 {
 	A<X, Y, Z> ax;
+	using type = decltype(ax);
+
+	static_assert(std::is_base_of_v<X, type> &&
+		std::is_base_of_v<Y, type> &&
+		std::is_base_of_v<Z, type>);
 }
