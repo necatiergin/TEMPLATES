@@ -1,4 +1,5 @@
 #include <iostream>
+#include <type_traits>
 
 template<typename ...TS>
 class Var {
@@ -13,5 +14,6 @@ public:
 
 int main()
 {
-	constexpr auto n = Myclass<int, double>::size;
+	constexpr auto n = Myclass<int, double>::size; //2
+	static_assert(std::is_base_of_v<Var<int, double>, Myclass<int, double>>); //holds
 }
