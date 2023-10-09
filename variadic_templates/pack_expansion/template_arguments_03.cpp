@@ -1,6 +1,6 @@
 #include <iostream>
 
-template <size_t ...n>
+template <size_t ...N>
 struct A {
 	A()
 	{
@@ -8,10 +8,10 @@ struct A {
 	}
 };
 
-template <size_t ...n>
+template <size_t ...N>
 void func()
 {
-	A<n...> ax;
+	A<N...> ax;
 }
 
 int main()
