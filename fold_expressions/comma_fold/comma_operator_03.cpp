@@ -1,7 +1,7 @@
 #include <iostream>
 #include <concepts>
 
-int sum(std::same_as<int> auto... args)
+constexpr int sum(std::same_as<int> auto... args)
 {
 	int result{};
 
@@ -11,5 +11,5 @@ int sum(std::same_as<int> auto... args)
 
 int main()
 {
-	std::cout << sum(2, 5, 7, 9, 3);
+	constexpr auto x = sum(2, 5, 7, 9, 3);
 }
