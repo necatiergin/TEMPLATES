@@ -5,6 +5,7 @@
 */
 
 #include <utility>
+#include <iostream>
 
 template<typename ...Args>
 auto fdiv_r(Args && ...args)
@@ -17,8 +18,6 @@ auto fdiv_l(Args && ...args)
 {
 	return (... / std::forward<Args>(args)); //unary left fold
 }
-
-#include <iostream>
 
 int main()
 {
