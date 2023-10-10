@@ -15,5 +15,5 @@ int main()
 	push_back(ivec, 1, 2, 3, 4).push_back(5);
 	
 	for (auto i : ivec)
-		std::cout << i << " ";
+		std::cout << i << ' ';
 }
