@@ -4,7 +4,6 @@
 #include <iterator>
 #include <algorithm>
 
-
 template<typename T, typename... Args>
 void push_back_vec(std::vector<T>& v, Args&&... args) {
     (v.push_back(std::forward<Args>(args)), ...);
