@@ -1,11 +1,11 @@
 #include <iostream>
 
-void print(const auto&... args) 
+void print(const auto&... args)
 {
-	((std::cout << args), ...);
+	((std::cout << args << ' '), ...) << '\n';
 }
 
 int main()
 {
-	print(1, 1.2f, 'A');
+	print(1, 1.2f, 'A', "necati");
 }
