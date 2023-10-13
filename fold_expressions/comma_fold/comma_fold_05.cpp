@@ -1,20 +1,19 @@
 #include <iostream>
 
 template<typename First, typename ...Args>
-void FoldPrintComma(First&& f, Args&&... args)
+void fold_print(First&& f, Args&&... args)
 {
     std::cout << f;
-    auto withComma = [](const auto& v) {
+    auto print_with_comma = [](const auto& v) {
         std::cout << ", " << v;
-    };
-    
-    (..., withComma(std::forward<Args>(args)));
+        };
+
+    (..., print_with_comma(std::forward<Args>(args)));
 
     std::cout << '\n';
 }
 
-int main() 
+int main()
 {
-    FoldPrintComma("hello", 10, 20, 30); 
-
+    fold_print("necati", 10, 20, 30, "ergin");
 }
