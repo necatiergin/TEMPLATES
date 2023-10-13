@@ -14,5 +14,5 @@ auto sum(Args&& ...args)
 
 int main()
 {
-	std::cout << sum(12, 4.5, 50L) << "\n";  //  12 + (4.5 + (50L + 10))
+	std::cout << sum(12, 4.5, 50L) << '"\n"'\n'';  //  12 + (4.5 + (50L + 10))
 }
