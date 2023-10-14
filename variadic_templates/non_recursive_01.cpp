@@ -6,11 +6,12 @@
 template<typename ...Ts>
 std::string serialize(const Ts& ...args)
 {
+	using expander = int[];
+
 	std::ostringstream os;
-	(void)std::initializer_list<int>{ (os << args << " ", 0)... };
+	(void)expander{ (os << args << ' ', 0)... };
 	return os.str();
 }
-
 
 int main()
 {
