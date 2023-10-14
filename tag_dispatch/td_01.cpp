@@ -17,12 +17,12 @@ void func_impl(T x, std::false_type)
 template<typename T>
 void func(T x)
 {
-	func_impl(x, typename std::is_integral<T>::type{});
-	//func_impl(x, typename std::is_integral<T>{});  //kalıtım
+	func_impl(x, std::is_integral<T>{});
 }
 
 
 int main()
 {
+	func(23);
 	func(1.2);
 }
