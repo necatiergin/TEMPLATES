@@ -6,12 +6,11 @@
 template<typename TDerived>
 class Singleton
 {
-    static std::unique_ptr<TDerived> m_instance;
-    static std::once_flag            m_once;
+    inline static std::unique_ptr<TDerived> m_instance{};
+    inline static std::once_flag            m_once{};
 protected:
     Singleton() {}
 public:
-
     ~Singleton() { }
     Singleton(const Singleton&) = delete;
     Singleton& operator=(const Singleton&) = delete;
@@ -26,23 +25,19 @@ public:
     }
 };
 
-template<typename TDerived>
-std::unique_ptr<TDerived>  Singleton<TDerived>::m_instance;
-
-template<typename TDerived>
-std::once_flag   Singleton<TDerived>::m_once;
-
 
 #include <iostream>
 
 class Myclass : public Singleton<Myclass>
 {
 public:
-    Myclass() {
+    Myclass() 
+    {
         std::cout << "Myclass ctor\n";
     }
 
-    ~Myclass() {
+    ~Myclass() 
+    {
         std::cout << "Myclass destructor\n";
     }
 
@@ -56,3 +51,4 @@ int main()
 {
     Myclass::GetInstance().foo();
 }
+
