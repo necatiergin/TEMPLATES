@@ -1,4 +1,5 @@
-template <typename D> class B {
+template <typename D> 
+class B {
 public:
 	friend bool operator!=(const D& lhs, const D& rhs) 
 	{
