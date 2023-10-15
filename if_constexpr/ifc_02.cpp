@@ -10,7 +10,7 @@ void func(T tx)
 		}
 	}
 	else {
-		//undeclared_f(); //syntax error (name non dependant on template parameter)
+		//undeclared_f(); //syntax error (name non dependent on template parameter)
 		undeclared(tx);   //error if else part instantiated
 		//static_assert(false, "not integral type"); //syntax error
 	}
