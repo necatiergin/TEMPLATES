@@ -23,15 +23,10 @@ public:
 	static std::size_t how_many_created() { return ms_count_created; }
 	static std::size_t how_many_alive() { return ms_count_alive; }
 private:
-	static std::size_t ms_count_created;
-	static std::size_t ms_count_alive;
+	inline static std::size_t ms_count_created{};
+	inline static std::size_t ms_count_alive{};
 };
 
-template <typename T>
-std::size_t Counter<T>::ms_count_created{};
-
-template <typename T>
-std::size_t Counter<T>::ms_count_alive{};
 
 
 class Neco : Counter<Neco> {
