@@ -4,10 +4,10 @@ class X;
 template <typename T>
 class A
 {
-    //friend class X<T>;    
-    //friend class X<int>;  
+    friend class X<T>;    
+    
 private:
-    void foo();
+    void foo() {}
 };
 
 
@@ -17,8 +17,10 @@ class X {
 public:
     void func()
     {
-        A<double> ax;
+        A<T> ax;
+        A<int> y;
         ax.foo();
+        y.foo(); //error
     }
 };
 
