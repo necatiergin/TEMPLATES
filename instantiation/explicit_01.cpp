@@ -1,6 +1,8 @@
 template<typename T>
 void foo(T)
-{}
+{
+    //...
+}
 
 
 template void foo<int>(int);
