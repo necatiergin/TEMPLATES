@@ -21,6 +21,7 @@ void func(T x)
 	detail::func_impl(x, std::is_integral<T>{});
 }
 
+
 int main()
 {
 	func(23);
