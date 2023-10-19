@@ -4,11 +4,15 @@
 template<typename T>
 void tpl_func()
 {
-    // body
+    //...
 }
 
 ///////////////////////////////
 // file_x.cpp
+
+// Bu kod optimizasyon seçeneği (-O2 on gcc or clang) ile derlenirse
+// bağlayıcı program tpl_func<int>() fonksiyonunun tanımsız olduğu yönünde bir hata mesajı verebilir.
+// 
 
 //#include "tpl_func.h"
 
@@ -32,12 +36,23 @@ void fy()
 }
 
 /*
-> nm - g - C --defined - only * .o
+ nm -g -C --defined-only *.o
 
-fx.o:
-00000000 W void tpl_func<int>()
+f1.o:
 00000000 T fx()
 
-fy.o :
-    00000000 T fy()
+f2.o:
+00000000 T fy()
+
 */
+//tpl_func.h
+
+template<typename T>
+void __attribute__ ((noinline)) tpl_func()
+{
+    // ...
+}
+
+/*
+
+    
