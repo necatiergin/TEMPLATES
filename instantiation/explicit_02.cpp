@@ -1,11 +1,10 @@
-
 //nec.h
 namespace ns
 {
 	template <typename T>
 	class Nec
 	{
-		//...;
+		//...
 	};
 	template class Nec<int>; 
 }
