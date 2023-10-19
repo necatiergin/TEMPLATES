@@ -1,10 +1,7 @@
-/* 14.7 In the Standard Library The C++ standard library includes a number of templates that are only commonly
-used with a few basic types. For example, the std::basic_string class
-template is most commonly used with char (because std::string is a type alias
-of std::basic_string<char>) or wchar_t, although it is possible to
-instantiate it with other character-like types. Therefore, it is common for standard
-library implementations to introduce explicit instantiation declarations for these
-common cases. For example:
+/* The C++ standard library includes a number of templates that are only commonly used with a few basic types. 
+For example, the std::basic_string class template is most commonly used with char (because std::string is a type alias instantiate it with other character-like types. 
+Therefore, it is common for standard library implementations to introduce explicit instantiation declarations for these common cases. 
+For example:
 */
 
 namespace std {
@@ -18,9 +15,8 @@ namespace std {
   extern template class basic_string<wchar_t>;
 }
 
-/* The source files implementing the standard library will then contain the
-corresponding explicit instantiation definitions, so that these common
-implementations can be shared among all users of the standard library. Similar
-explicit instantiations often exist for the various stream classes, such as
-basic_iostream, basic_istream, and so on.
+/* The source files implementing the standard library will then contain the corresponding explicit instantiation definitions, 
+so that these common implementations can be shared among all users of the standard library. 
+Similar explicit instantiations often exist for the various stream classes, 
+such as basic_iostream, basic_istream, and so on.
 */
