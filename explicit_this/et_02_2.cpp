@@ -1,6 +1,5 @@
 #include <optional>
 
-
 template <typename T>
 class Optional {
 public:
