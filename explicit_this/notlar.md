@@ -7,3 +7,9 @@ deducing this <br>
 - fonksiyonun ilk parametresi olmak zorunda.
 - Sınıf türünden önce this anahtar sözcüğü kullanılıyor.
 
+
+Sağlayabileceği faydalar şöyle özetlenebilir:
+- Kod tekrarının engellenmesi
+- _recursive lambda_ fonksiyonların kolay bir şekilde ayzılabilmesi
+- _this_ göstericisinin değerle fonksiyona geçilebilmesi
+- Bazı _CRTP_ uygulamalarının daha kolay yapılabilmesi
