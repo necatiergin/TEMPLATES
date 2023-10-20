@@ -4,12 +4,12 @@
 class Nec {
 public:
 	//...
-	void set(this Nec & self, int val)
+	void set(this Nec& self, int val)
 	{
 		self.mx = val;
 	}
 
-	void print(const Nec this& self)
+	void print(this const Nec & self)
 	{
 		//mx = 23; //error
 		//self.mx = 23;  //error
