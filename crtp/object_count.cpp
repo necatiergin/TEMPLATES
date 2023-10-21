@@ -29,20 +29,35 @@ private:
 
 
 
-class Neco : Counter<Neco> {
+class Nec : Counter<Nec> {
 public:
-	using Counter<Neco>::how_many_alive;
-	using Counter<Neco>::how_many_created;
+	using Counter<Nec>::how_many_alive;
+	using Counter<Nec>::how_many_created;
+};
+
+class Erg : Counter<Erg> {
+public:
+	using Counter<Erg>::how_many_alive;
+	using Counter<Erg>::how_many_created;
 };
 
 #include <iostream>
 
 int main()
 {
-	Neco n1, n2, n3;
+	Nec n1, n2, n3;
 	{
-		Neco n1, n2, n3;
+		Nec n1, n2, n3;
 	}
-	std::cout << Neco::how_many_alive() << '\n';
-	std::cout << Neco::how_many_created() << '\n';
+	std::cout << Nec::how_many_alive() << '\n';
+	std::cout << Nec::how_many_created() << '\n';
+
+	Erg e1, e2;
+	{
+		Erg e1, e2, e3, e4;
+	}
+	std::cout << Erg::how_many_alive() << '\n';
+	std::cout << Erg::how_many_created() << '\n';
 }
+/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
