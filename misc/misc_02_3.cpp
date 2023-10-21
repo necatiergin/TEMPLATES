@@ -4,7 +4,7 @@ template <typename T>
 struct always_false : std::false_type{ };
 
 template <typename T>
-using always_false_t = always_false<T>::type;
+constexpr bool always_false_v = always_false<T>::value;
 
 template <typename T>
 void func(T x)
@@ -13,7 +13,7 @@ void func(T x)
 		//code here
 	}
 	else {
-		static_assert(always_false_t<T>, "only for integral types");
+		static_assert(always_false_v<T>, "only for integral types");
 	}
 }
 
