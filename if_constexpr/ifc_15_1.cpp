@@ -8,7 +8,7 @@ public:
 
 private: 
     int ival;
-    double b;
+    double dval;
     std::string name;
     std::vector<int> ivec;
 };
@@ -22,7 +22,7 @@ auto Nec::get<0>()
 template <>
 auto Nec::get<1>() 
 {
-    return b;
+    return dval;
 }
 
 template <>
