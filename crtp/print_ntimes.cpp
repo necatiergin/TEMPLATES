@@ -4,7 +4,7 @@
 template<typename Printable>
 struct Print_NTimes
 {
-    void repeat(std::size_t n) const
+    void print_n(std::size_t n) const
     {
         while (n-- > 0)
         {
@@ -35,9 +35,5 @@ private:
 int main()
 {
     Name nec("Necati", "Ergin");
-    nec.repeat(10);
+    nec.print_n(10);
 }
-
-//------------------------------------------------------
-//------------------------------------------------------
-
