@@ -1,3 +1,5 @@
+//another alternative to CRTP
+
 #include <cstddef>
 
 template <typename = decltype([]{})>
