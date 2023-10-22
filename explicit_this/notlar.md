@@ -5,11 +5,11 @@ deducing this <br>
 - _explicit object parameter_ deniyor.
 - non-static üye fonksiyonlarda kullanılıyor.
 - fonksiyonun ilk parametresi olmak zorunda.
-- Sınıf türünden önce this anahtar sözcüğü kullanılıyor.
+- Sınıf türünden önce _this_ anahtar sözcüğü kullanılıyor.
 
 
 Sağlayabileceği faydalar şöyle özetlenebilir:
 - Kod tekrarının engellenmesi
-- _recursive lambda_ fonksiyonların kolay bir şekilde ayzılabilmesi
+- _recursive lambda_ fonksiyonların kolay bir şekilde yazılabilmesi
 - _this_ göstericisinin değerle fonksiyona geçilebilmesi
-- Bazı _CRTP_ uygulamalarının daha kolay yapılabilmesi
+- Bazı _CRTP_ uygulamalarının daha kolay yapılabilmesi.
