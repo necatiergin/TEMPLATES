@@ -4,8 +4,14 @@ struct Number
 {
 	typedef int value_type;
 	int n;
-	void set(int v) { n = v; }
-	int get() const { return n; }
+	void set(int v)
+	{
+		n = v;
+	}
+	int get() const 
+	{
+		return n;
+	}
 };
 
 template <typename Base, typename T = typename Base::value_type>
@@ -15,9 +21,14 @@ struct Undoable : public Base
 	T before;
 	void set(T v)
 	{
-		before = Base::get(); Base::set(v);
+		before = Base::get();
+		Base::set(v);
 	}
-	void undo() { Base::set(before); }
+	
+	void undo()
+	{
+		Base::set(before);
+	}
 };
 
 template <typename Base, typename T = typename Base::value_type>
@@ -25,6 +36,7 @@ struct Redoable : public Base
 {
 	typedef T value_type;
 	T after;
+
 	void set(T v)
 	{
 		after = v; Base::set(v);
