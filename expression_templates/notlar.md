@@ -101,6 +101,10 @@ vector<double> v3 = v1 + a * v2;
 // {7.0, 9.5, 12.0}
 vector<int> v4 = v1 * v2 + v1 + v2; // {9, 17, 27}
 ```
+Buradaki sınıf, std::vector standart kabına benziyor ve aslında verileri tutmak için bir std::vector veri elemanına sahip. Ancak bu nokta çözmek istediğimiz problemle doğrudan ilgili değil. Matris yerine vector kullanmamız örneği basitleştirmek ve odak noktamızın ifade şablonları olmasını sağlamak için.
+Şimdi bu sınıf için bazı fonksiyonlar tanımlayalım:
+
+hem iki vektör arasında hem de bir skaler ile bir vektör arasında toplama ve çarpma:
 
 
 
