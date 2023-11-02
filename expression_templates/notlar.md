@@ -21,3 +21,13 @@ Son işlem ikinci işlemin bir benzeri. Skalar 5 ile matris m2 arasındaki çarp
 İşlemler ne kadar karmaşık olursa o kadar fazla geçici nesne oluşur. Nesnelerin bellekte kapladığı yer büyüdükçe bu işlemlerden doğacak verim kaybı artar. İfade şablonları, hesaplamayı derleme zamanı ifadesi olarak modelleyerek bu durumdan kaçınılmasını sağlar.
 Matematiksel ifadenin tamamı (m1 + 5 * m2 gibi), atama değerlendirildiğinde ve herhangi bir geçici nesneye ihtiyaç duyulmadan hesaplanan tek bir ifade şablonu haline getirilir.
 
+
+Örneği basitleştirmek için matrisleri değil vektörleri kullanacağız. Örnek kodların amacı ifade şablonlarının oluşturulmasına odaklanmak olduğundan verilerin temsili çok önemli değil. Aşağıdaki çeşitli işlemler yapmaya olanak sağlayan minimal bir _vector_ gerçekleştirimi var:
+
+- std::initializer_list parametr eli bir constructor
+- eleman sayısını veren size üye fonksiyonu
+- elemanlara erişim sağlayan [] operatör fonksiyonu
+
+
+
+
