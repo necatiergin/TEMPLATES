@@ -18,3 +18,6 @@ Ancak, ikinci işlem farklı, çünkü eklenen üç matris var. Burada önce m1 
 Bu iki değer toplanır ve elde edilen sonuç r3 değişkenine atanır.
 Son işlem ikinci işlemin bir benzeri. Skalar 5 ile matris m2 arasındaki çarpımdanyine geçici bir nesne elde edilir ve daha sonra bu geçici nesne ile m1 toplanır ve sonuç r4 değişkenine atanır.
 
+İşlemler ne kadar karmaşık olursa o kadar fazla geçici nesne oluşur. Nesnelerin bellekte kapladığı yer büyüdükçe bu işlemlerden doğacak verim kaybı artar. İfade şablonları, hesaplamayı derleme zamanı ifadesi olarak modelleyerek bu durumdan kaçınılmasını sağlar.
+Matematiksel ifadenin tamamı (m1 + 5 * m2 gibi), atama değerlendirildiğinde ve herhangi bir geçici nesneye ihtiyaç duyulmadan hesaplanan tek bir ifade şablonu haline getirilir.
+
