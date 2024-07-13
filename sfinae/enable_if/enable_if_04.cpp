@@ -12,8 +12,8 @@ void func(T x)
 int func(double x)
 {
 	std::cout << "func double\n";
-	return 1;
 
+	return 1;
 }
 
 int main()
