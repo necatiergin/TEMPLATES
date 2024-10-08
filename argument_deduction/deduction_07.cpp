@@ -1,7 +1,6 @@
 template <typename T>
 class TypeTeller;
 
-
 template <typename T>
 void func(T&)
 {
