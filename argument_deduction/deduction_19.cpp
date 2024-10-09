@@ -11,4 +11,5 @@ int main()
 	func(&x); //T is int*
 	//func();  // invalid
 	func(Myclass{}); //valid
+	//func<Myclass>(); //invalid
 }
