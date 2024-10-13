@@ -1,11 +1,9 @@
 #include <iostream>
 
-
 template <typename T>
 struct Nec
 {
 	static T ms;
-	
 };
 
 template <typename T> 
