@@ -4,7 +4,7 @@ struct Myclass {
 	void f2();
 };
 
-//different interfaces
+//explicit specialization may have a different interface
 template <>
 struct Myclass<int> {
 	void g1();
