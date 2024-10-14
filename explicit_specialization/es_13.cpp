@@ -1,3 +1,5 @@
+//explicit specialization for a variable template
+
 #include <iostream>
 
 template<typename T>
