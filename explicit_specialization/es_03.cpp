@@ -1,16 +1,20 @@
 #include <iostream>
 
-template<size_t n>
+template<size_t N>
 struct Fact {
-	static const size_t value{ n > 1 ? n * Fact<n - 1>::value : 1 };
+	static const std::size_t value{ N > 1 ? N * Fact<N - 1>::value : 1 };
 };
 
 template<>
 struct Fact<0> {
-	static const size_t value{ 1 };
+	static const std::size_t value{ 1 };
 };
+
+template <size_t N>
+constexpr std::size_t Fact_v = Fact<N>::value;
 
 int main()
 {
-	std::cout << Fact<5>::value << '\n';
+	constexpr auto val = Fact_v<5>;
+	std::cout << val << '\N';
 }
