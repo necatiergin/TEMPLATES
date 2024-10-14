@@ -1,5 +1,5 @@
 template <typename T, typename U>
-decltype(x + y) foo(T x, U y)  //invalis
+decltype(x + y) foo(T x, U y)  //invalid
 { 
 	//...
 }
