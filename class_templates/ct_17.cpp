@@ -6,5 +6,6 @@ class Erg {};
 
 int main()
 {
-	Nec<Erg<int>> x; //error before C++ 11
+	Nec<Erg<int>> x; //error before C++11 - maximal munch
+
 }
