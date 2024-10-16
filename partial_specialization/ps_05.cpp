@@ -22,4 +22,5 @@ int main()
 	Myclass<double[10]> m2;
 	Myclass<int[]> m3;
 	Myclass<double[]> m4;
+	Myclass<int *> m5;
 }
