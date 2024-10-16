@@ -22,4 +22,5 @@ int main()
 	Myclass<int[10]> m2;
 	Myclass<double> m3;
 	Myclass<double[10]> m4;
+	Myclass<const double[10]> m5;
 }
