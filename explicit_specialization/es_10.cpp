@@ -1,14 +1,13 @@
 #include <cstdint>
 
-
 template <int n>
-constexpr int64_t factorial()
+constexpr std::int64_t factorial()
 {
 	return n * factorial<n - 1>();
 }
 
 template <>
-constexpr int64_t factorial<0>()
+constexpr std::int64_t factorial<0>()
 {
 	return 1;
 }
