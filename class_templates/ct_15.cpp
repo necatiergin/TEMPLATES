@@ -6,5 +6,5 @@ public:
 
 template <typename T>   //definition
 class Nec<T>::Nested {
-		//...
+	//...
 };
