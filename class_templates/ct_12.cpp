@@ -3,7 +3,6 @@ class Nec {
 
 };
 
-
 int main()
 {
 	Nec<double> d;
