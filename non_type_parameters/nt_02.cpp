@@ -10,8 +10,8 @@ int main()
 	static char s2[] = "mustafa";
 
 	//Nec<"alican"> n1; //invalid
-	//Nec<str> n2; //invalid
-	Nec<gs> n3;
-	Nec<gcs> n4;
-	Nec<s2> n5;
+	//Nec<s1> n2; //invalid
+	[[maybe_unused]] Nec<gs> n3;
+	[[maybe_unused]] Nec<gcs> n4;
+	[[maybe_unused]] Nec<s2> n5;
 }
