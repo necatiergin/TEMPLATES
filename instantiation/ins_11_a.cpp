@@ -3,7 +3,7 @@
 template <typename T>
 struct processor; 
 
-void bar(double value) 
+void bar(double) 
 {
 	std::cout << "void bar(double)\n";
 }
@@ -17,7 +17,7 @@ struct Nec
 	}
 };
 
-void bar(int value)
+void bar(int)
 {
 	std::cout << "void bar(int)\n";
 }
