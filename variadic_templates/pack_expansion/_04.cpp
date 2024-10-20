@@ -6,6 +6,7 @@ constexpr auto sum(Ts ...args)
 	return (0 + ... + args);
 }
 
+
 template <typename ...Ts>
 constexpr auto mul(Ts ...args)
 {
