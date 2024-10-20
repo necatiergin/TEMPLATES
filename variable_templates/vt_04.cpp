@@ -5,6 +5,6 @@ constexpr bool IsPointer_v = std::is_pointer<T>::value;
 
 int main()
 {
-	constexpr auto f = IsPointer_v<int>;
-	constexpr auto t = IsPointer_v<int *>;
+	constexpr auto b1 = IsPointer_v<int>;
+	constexpr auto b2 = IsPointer_v<int*>;
 }
