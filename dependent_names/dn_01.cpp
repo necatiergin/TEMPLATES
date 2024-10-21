@@ -19,3 +19,14 @@ struct Nec {
 		auto x = T::foo; // what does this refer to?
 	}
 };
+
+
+int main()
+{
+	//Nec<A> anec;
+	//anec.foo();
+	//Nec<B> bnec;
+	//bnec.foo();
+	//Nec<C> cnec;
+	//cnec.foo();
+}
