@@ -3,8 +3,8 @@
 template<typename ...Args>
 void func(Args ...args)
 {
-	std::cout << sizeof...(Args) << "\n";
-	std::cout << sizeof...(args) << "\n";
+	std::cout << sizeof...(Args) << '\n';
+	std::cout << sizeof...(args) << '\n';
 }
 
 int main()
