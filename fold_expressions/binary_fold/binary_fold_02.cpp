@@ -14,5 +14,5 @@ int main()
 {
     int result = subtract(100, 50, 20, 7); //'result' is (((100 - 50) - 20) - 7) = 23
 
-    std::cout << "result = " << result << "\n";
+    std::cout << "result = " << result << '\n'
 }
