@@ -1,4 +1,4 @@
-//explicit intantiation
+//explicit instantiation
 
 template<typename T>
 void foo(T)
