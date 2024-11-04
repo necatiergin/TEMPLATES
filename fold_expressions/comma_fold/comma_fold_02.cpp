@@ -1,3 +1,5 @@
+// unary right fold over comma operator
+
 #include <iostream>
 
 void print(const auto&... args)
