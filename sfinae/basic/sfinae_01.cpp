@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <vector>
 
 template<typename T, unsigned N>
 std::size_t len(T(&)[N])
@@ -16,12 +16,13 @@ typename T::size_type len(T const& t)
 int main()
 {
 	int a[10]{};
-	std::cout << len(a); 
-	std::cout << len("tmp"); 
+	std::cout << len(a);
+	std::cout << len("tmp");
 	int* p{};
-	//std::cout << len(p); //gecersiz
+	//std::cout << len(p); //invalid
 
 	std::allocator<int> x;
-	std::cout << len(x); //gecersiz
-
+	//std::cout << len(x); //invalid
+	std::vector<int> ivec;
+	std::cout << len(ivec);	 // valid
 }
