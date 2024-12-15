@@ -1,5 +1,4 @@
 #include <iostream>
-#include <type_traits>
 
 template <int n, int(*)[n % 2 == 0] = nullptr>
 void func()
