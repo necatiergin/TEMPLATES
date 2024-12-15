@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 template <typename T>
 auto func(T t)->decltype(t.f(), void())
 {
