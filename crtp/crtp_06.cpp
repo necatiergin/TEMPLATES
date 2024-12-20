@@ -1,7 +1,7 @@
 //CRTP base singleton class
+
 #include <memory>
 #include <mutex>
-
 
 template<typename TDerived>
 class Singleton
