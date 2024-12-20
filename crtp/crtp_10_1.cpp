@@ -23,11 +23,9 @@ private:
 };
 
 
-using namespace std;
-
 #include <iostream>
 
 int main()
 {
-    Printer(cout).print("necati ").print_line("ergin");
+    Printer(std::cout).print("necati ").print_line("ergin");
 }
