@@ -1,5 +1,3 @@
-#include <iostream>
-
 template <typename T>
 struct Myclass {
 	void foo();
