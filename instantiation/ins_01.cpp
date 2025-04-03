@@ -7,7 +7,7 @@ struct Nec
 
 int main()
 {
-	Nec<char>* pcnec; // no instantiatipn
+	Nec<char>* pcnec; // no instantiati0n
 	Nec<int> nec;  // Nec<int> is instantiated
 	Nec<float>* pfnec; // no instantiation
 	//...
