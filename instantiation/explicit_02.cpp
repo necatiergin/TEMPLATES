@@ -6,7 +6,7 @@ namespace ns
 	{
 		//...
 	};
-	template class Nec<int>; 
+	
 }
 
 // client.cpp
