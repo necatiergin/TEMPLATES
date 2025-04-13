@@ -5,7 +5,8 @@
 template <typename ...Args>
 class Myclass {
 public:
-	Myclass(Args&& ...) {}
+	template <typename ...Ts>
+	Myclass(Ts&& ...) {}
 };
 
 template <typename ...Ts>
