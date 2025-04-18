@@ -13,7 +13,7 @@ template <int* p>
 class B {};
 
 template <int (*pf)(int)>
-class C { };
+class C {};
 
 template <double(Myclass::*)(double)>
 class D {};
@@ -25,12 +25,10 @@ class E {
 
 int main()
 {
-	int ival{};
-
-	A<5> ax;
-	B<&g> bx;
-	C<foo> cx;
-	D<&Myclass::foo> dx;
-	E<g> ex;
+	[maybe_unused]A<5> ax;
+	[maybe_unused]B<&g> bx;
+	[maybe_unused]C<foo> cx;
+	[maybe_unused]D<&Myclass::foo> dx;
+	[maybe_unused]E<g> ex;
 	//...
 }
