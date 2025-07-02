@@ -15,7 +15,7 @@ class Erg {
 
 int main()
 {
-	Nec <1, 4, 5, 7> x;
-	Erg <Color::White, Color::Brown, Color::Black> y;
+	[[maybe_unused]] Nec <1, 4, 5, 7> x;
+	[[maybe_unused]] Erg <Color::White, Color::Brown, Color::Black> y;
 	//...
 }
