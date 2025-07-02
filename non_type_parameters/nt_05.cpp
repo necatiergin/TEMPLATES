@@ -1,5 +1,3 @@
-#include <iostream>
-
 template<typename T, int N, int M>
 constexpr bool less(const T(&a)[N], const T(&b)[M])
 {
@@ -17,11 +15,10 @@ constexpr bool less(const T(&a)[N], const T(&b)[M])
 
 int main()
 {
-	int a[] = { 3, 7, 9 };
+	constexpr int a[] = { 3, 7, 9 };
 	constexpr int b[] = { 3, 7, 9, 2, 6 };
 	constexpr int c[] = { 3, 7, 9, 3, 6 };
 
-	constexpr auto f = less(b, c);
-
-	std::cout << std::boolalpha << (a < b);
+	constexpr auto result1 = less(b, c);
+	constexpr auto result2 = less(a, c);
 }
