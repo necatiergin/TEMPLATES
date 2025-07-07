@@ -1,3 +1,5 @@
+//detection_idiom
+
 #include <iostream>
 
 template <typename T>
