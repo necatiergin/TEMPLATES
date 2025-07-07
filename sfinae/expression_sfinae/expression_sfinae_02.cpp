@@ -30,5 +30,5 @@ int main()
 {
 	func(F{});
 	func(G{});
-	func(S{}); //invalid
+	//func(S{}); //invalid
 }
