@@ -2,8 +2,10 @@
 #include <type_traits>
 
 template <typename ...Ts>
-constexpr std::array<std::common_type_t<Ts...>, sizeof...(Ts)> make_array(Ts ...args) {
-    return { args...};
+constexpr std::array<std::common_type_t<Ts...>, sizeof...(Ts)> 
+make_array(Ts ...args) 
+{
+    return { args... };
 }
 
 int main()
