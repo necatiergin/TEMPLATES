@@ -10,11 +10,14 @@ struct Sum {
 };
 
 template <typename ... Types>
-Sum(Types&& ... ts)->Sum<std::common_type_t<Types...>>;
+Sum(Types&& ... ts) -> Sum<std::common_type_t<Types...>>;
 
 int main()
 {
 	Sum s{ 1u, 2.0, 3, 4.0f };
+
+	std::cout << typeid(s).name() << '\n';
+
 	Sum strsum{ std::string{"abc"}, "def" };
 	std::cout << s.value << '\n'
 		<< strsum.value << '\n';
