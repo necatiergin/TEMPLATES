@@ -1,13 +1,18 @@
+#include <iostream>
+
 template<typename T1, typename T2>
 struct Pair {
 	T1	first;
 	T2	second;
-	Pair(const T1& x, const T2& y) : first{ x }, second{ y } {}
+	Pair(const T1& x, const T2& y) : first{ x }, second{ y } 
+	{
+		std::cout << typeid(T1).name() << '\n' << typeid(T2).name() << '\n';
+	}
 };
 
 // deduction guide for the constructor:
-template<typename T1, typename T2>
-Pair(T1, T2)->Pair<T1, T2>;
+//template<typename T1, typename T2>
+//Pair(T1, T2) -> Pair<T1, T2>;
 
 int main()
 {
