@@ -13,12 +13,12 @@ void process_impl(const Tuple& t, std::index_sequence<I...>)
 }
 
 template <typename Tuple>
-void process(const Tuple &t)
+void process(const Tuple& t)
 {
-    process(t, std::make_index_sequence<std::tuple_size<Tuple>::value>());
+    process_impl(t, std::make_index_sequence<std::tuple_size<Tuple>::value>());
 }
 
 int main()
 {
-    std::tuple(1, 'A', 2.3);
+    process(std::tuple(1, 'A', 2.3));
 }
