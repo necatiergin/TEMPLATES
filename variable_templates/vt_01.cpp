@@ -8,3 +8,9 @@ T circular_area(T r) // function template
 {
 	return pi<T> * r * r; // pi<T> is a variable template instantiation
 }
+
+template<typename T>
+struct Pi
+{
+    static constexpr T value = T(3.1415926535897932385L);
+};
